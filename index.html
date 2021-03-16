@@ -1,1 +1,315 @@
-test
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+    body {
+      padding-top: 70px;
+    }
+
+    div.row {
+      padding-top: 70px;
+      margin-top: -70px;
+    }
+
+    .navbar {
+      background-color: #0D19A3;
+      /*#25274D;*/
+    }
+
+    h3 {
+      color: #0D19A3;
+      /*#2E9CCA;*/
+    }
+
+    .invitedSpeakerList>li {
+      margin-bottom: 5px;
+    }
+
+    .titleLine {
+      /*color:#0D19A3;*/
+    }
+
+    .scheduleTime {
+      padding-right: 20px;
+    }
+
+    .blankRow {
+      height: 10px;
+    }
+
+    hr {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  </style>
+
+  <title>(Learning) Representations for Planning and Control - RSS 2021 Workshop Proposal</title>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarTop">
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTop">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#overview">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#invitedSpeakers">Invited Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#schedule">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#callForContributions">Call for Contributions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#organizers">Organizers</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row" id="home">
+      <div class="col p-lg-5 mx-auto text-center">
+        <h1 class="titleLine display-5 font-weight-normal">(Learning) Representations for Planning and Control</h1>
+        <p class="lead font-weight-normal"><a href="https://roboticsconference.org/" target="_blank" rel="noopener noreferrer">RSS 2021</a> Workshop Proposal</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row" id="overview">
+      <div class="col">
+        <h3>Overview</h3>
+        <p>
+            Obtaining (dynamics) models, both from data and first principles, has been
+            studied in various different fields for decades. Deep learning has enabled 
+            to learn such models in high-dimensional observation spaces with high predictive 
+            power. However, having an accurate dynamics model does not necessarily imply 
+            that it enables efficient reasoning for planning or control.
+            This problem is especially dominant for long-horizon tasks with combinatorial 
+            complexity, sparse reward and challenging motion planning/control aspects.
+            Task and Motion Planning (TAMP) approaches have developed powerful representations 
+            that are capable of solving such long-horizon tasks efficiently.
+            In TAMP, however, these representations are usually specified by expert knowledge 
+            and it is unclear how to map sensor observations to these representations, e.g. in 
+            terms of object models, or how to learn such representations in the first place.
+        </p>
+        <p>
+          The goal of this workshop is to bring together experts from the fields of
+          <ul>
+            <li>Task and Motion Planning</li>
+            <li>Model Learning / System Identification</li>
+            <li>Computer Vision / Perception</li>
+            <li>Control and Feedback Motion Planning</li>
+            <li>(Model-based) Reinforcement Learning</li>
+          </ul> 
+          to discuss how representations can be obtained that enable efficient reasoning for
+          planning and control while being closely connected to observation spaces.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row" id="invitedSpeakers">
+      <div class="col">
+        <h3>Invited Speakers</h3>
+        <p>
+          <ul class="invitedSpeakerList">
+            <li>
+              <a href="https://ai.stanford.edu/~cbfinn/" target="_blank">Chelsea Finn</a>
+              <br>
+              Stanford University
+            </li>
+            <li>
+              <a href="https://homes.cs.washington.edu/~fox/" target="_blank">Dieter Fox</a>
+              <br>
+              University of Washington
+            </li>
+            <li>
+              <a href="http://www.cvlibs.net/" target="_blank">Andreas Geiger</a>
+              <br>
+              University of Tübingen
+            </li>
+            <li>
+              <a href="http://people.csail.mit.edu/lpk/" target="_blank">Leslie Kaelbling</a>
+              <br>
+              Massachusetts Institute of Technology
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?user=Vzr1RukAAAAJ" target="_blank">Igor Mordatch</a>
+              <br>
+              Google Brain
+            </li>
+            <li>
+              <a href="https://dair.seas.upenn.edu/michael-posa/" target="_blank">Michael Posa</a>
+              <br>
+              University of Pennsylvania
+            </li>
+            <li>
+              <a href="https://amyzhang.github.io/" target="_blank">Amy Zhang</a>
+              <br>
+              McGill University
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row" id="schedule">
+      <div class="col">
+        <h3>Schedule</h3>
+        <p>
+           <table>
+             <tr><td class="scheduleTime">09:00 - 09:10</td><td>Introduction</td></tr>
+             <tr class="blankRow"></tr>
+             <tr><td class="scheduleTime">09:10 - 09:30</td><td>Igor Mordatch</td></tr>
+             <tr><td class="scheduleTime">09:30 - 09:50</td><td>Michael Posa</td></tr>
+             <tr><td class="scheduleTime">09:50 - 10:05</td><td>Discussion 1</td></tr>
+             <tr class="blankRow"></tr>
+             <tr><td class="scheduleTime">10:05 - 10:10</td><td>Break</td></tr>
+             <tr class="blankRow"></tr>
+             <tr><td class="scheduleTime">10:10 - 10:30</td><td>Amy Zhang</td></tr>
+             <tr><td class="scheduleTime">10:30 - 10:50</td><td>Andreas Geiger</td></tr>
+             <tr><td class="scheduleTime">10:50 - 11:10</td><td>Dieter Fox</td></tr>
+             <tr><td class="scheduleTime">11:10 - 11:35</td><td>Discussion 2</td></tr>
+             <tr class="blankRow"></tr>
+             <tr><td class="scheduleTime">11:35 - 11:50</td><td>Spotlight Presentations</td></tr>
+             <tr><td class="scheduleTime">11:50 - 12:10</td><td>Virtual Poster Session and Break</td></tr>
+             <tr class="blankRow"></tr>
+             <tr><td class="scheduleTime">12:10 - 12:30</td><td>Chelsea Finn</td></tr>
+             <tr><td class="scheduleTime">12:30 - 12:50</td><td>Leslie Kaelbling</td></tr>
+             <tr><td class="scheduleTime">12:50 - 01:05</td><td>Discussion 3</td></tr>
+             <tr class="blankRow"></tr>
+             <tr><td class="scheduleTime">01:05 - 01:10</td><td>Break</td></tr> 
+             <tr class="blankRow"></tr>
+             <tr><td class="scheduleTime">01:10 - open</td><td>Panel Discussion</td></tr>
+           </table>
+        </p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row" id="callForContributions">
+      <div class="col">
+        <h3>Call for Contributions</h3>
+        <p>
+          We solicit 2-3 page extended abstracts using the standard
+          <a href="https://roboticsconference.org/docs/paper-template-latex.tar.gz">RSS template</a>.
+          References do not count to the page limit.
+        </p>
+        <p>
+          Topics of interest (but not limited to) are
+          <ul>
+            <li>Task and Motion Planning</li>
+            <li>Learning in/for task and motion planning</li>
+            <li>Model learning / system identification</li>
+            <li>Abstractions and hierarchies for Planning/Control</li>
+            <li>Learning abstractions for RL</li>
+            <li>Model-based RL</li>
+            <li>Vision-based models for planning and control</li>
+            <li>Perception for planning</li>
+            <li>Robot manipulation</li>
+          </ul>
+        </p>
+        <p>
+          Important dates:
+          <table style="margin-left: 30px; margin-top: -10px;">
+            <tr>
+              <td style="padding-right:10px;">Submission deadline:</td>
+              <td><span style="font-weight: bold;">June 18</span>, 2021. <a href="https://time.is/Anywhere_on_Earth" target="_blank">Anywhere on Earth</a></td>
+            </tr>
+            <tr>
+              <td style="padding-right:10px;">Acceptance notification:</td>
+              <td>July 2, 2021</td>
+            </tr>
+          </table>
+        </p>
+        <p>
+          Submissions should be sent directly via 
+          <a href='mailto&#58;&#108;&#114;&#112;&#99;&#114;&#115;&#115;&#50;&#48;&#50;&#49;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'>email</a>
+          as a PDF-file. Additional video attachments are welcome.
+        </p>
+        <p>
+          We seek original research, late breaking results that still need discussion
+          or work that discusses the workshop topic (with empirical data or theoretical foundation).
+          An overlap with submitted/accepted papers is acceptable, if they have not been presented before. 
+        </p>
+        <p>
+          Contributions will be presented live as spotlight presentations, followed by a virtual poster session.
+          Furthermore, accepted extended abstracts (and optional video attachments) will be published on this website.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+    <div class="row" id="organizers">
+      <div class="col">
+        <h3>Organizers</h3>
+        <p>
+          <ul class="invitedSpeakerList">
+            <li>
+              <a href="https://dannydriess.github.io/" target="_blank">Danny Driess</a> (primary contact)
+              <br>
+              University of Stuttgart and Max-Planck Institute for Intelligent Systems
+            </li>
+            <li>
+              <a href="https://groups.csail.mit.edu/locomotion/russt.html" target="_blank">Russ Tedrake</a>
+              <br>
+              Massachusetts Institute of Technology
+            </li>
+            <li>
+              <a href="http://www.marc-toussaint.net/" target="_blank">Marc Toussaint</a>
+              <br>
+              Technical University of Berlin and Max-Planck Institute for Intelligent Systems
+            </li>
+            <li>
+              <a href="https://web.stanford.edu/~bohg/" target="_blank">Jeannette Bohg</a>
+              <br>
+              Stanford University
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $('#navbarTop a').click(function () {
+      $("#navbarTop").collapse('hide');
+    });
+  </script>
+
+</body>
+
+</html>
